@@ -30,9 +30,15 @@
                 console.log(texto.search(regexp));
             </script>
             <p>
-                El Counter-Strike: Global Offensive (CS:GO) es un popular videojuego de disparos en primera persona (FPS) desarrollado por <a class="link-texto" href="https://es.wikipedia.org/wiki/Valve_Corporation">Valve Corporation</a> y <a class="link-texto" href="https://es.wikipedia.org/wiki/Hidden_Path_Entertainment">Hidden Path Entertainment</a>. 
+                El <p id="csgo">Counter-Strike: Global Offensive</p>(CS:GO) es un popular videojuego de disparos en primera persona (FPS) desarrollado por <a class="link-texto" href="https://es.wikipedia.org/wiki/Valve_Corporation">Valve Corporation</a> y <a class="link-texto" href="https://es.wikipedia.org/wiki/Hidden_Path_Entertainment">Hidden Path Entertainment</a>. 
                 Es la cuarta entrega principal de la serie Counter-Strike y ha sido un pilar en la escena de los eSports desde su lanzamiento en agosto de 2012.
             </p>
+            <script>
+                const csgo= document.querySelector("#csgo");
+                csgo.addEventListener("click",function() {
+                    csgo.style.color = "red";
+                });
+            </script>
             <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h1 id="titulo-texto"><em>¿Como se juega?</em></h1>
